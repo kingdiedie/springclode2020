@@ -1,0 +1,16 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: payment
+
+  datasource:
+    type:com.alibaba.druid.pool.DruidFataSource
+    driver-class-name:org.gjt.mm.mysql.Driver
+    url:jdbc
+    username:root
+    password:12
+
+mybatis:
+  mapperlocations: classpath:mapper/*.xml
+  type-alibaba-package:com.wrj.entity
